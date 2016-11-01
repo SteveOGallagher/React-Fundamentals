@@ -4,7 +4,8 @@
   "description": "<img src=\"http://www.reactjsprogram.com/images/reactjsprogram-500.png\" width=\"250\" align=\"right\">",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "production": "webpack -p",
+    "start": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -16,6 +17,10 @@
     "url": "https://github.com/SteveOGallagher/React-Fundamentals/issues"
   },
   "homepage": "https://github.com/SteveOGallagher/React-Fundamentals#readme",
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  },
   "devDependencies": {
     "babel-core": "^6.18.0",
     "babel-loader": "^6.2.7",
@@ -23,9 +28,5 @@
     "html-webpack-plugin": "^2.24.1",
     "webpack": "^1.13.3",
     "webpack-dev-server": "^1.16.2"
-  },
-  "dependencies": {
-    "react": "^15.3.2",
-    "react-dom": "^15.3.2"
   }
 }
